@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_NukaCola</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>nuka-cola</label>
+    <description>Because of a Nuka-Cola addiction, this person needs to regularly consume the drink to avoid withdrawal symptoms.</description>
+    <listPriority>45</listPriority>
+  </NeedDef>
+
+</Defs>
