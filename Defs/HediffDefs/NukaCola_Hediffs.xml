@@ -1,420 +1,436 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Chemical Def -->
-  <ChemicalDef>
-    <defName>NukaCola</defName>
-    <label>nuka-cola</label>
-    <addictionHediff>NukaCola_Addiction</addictionHediff>
-    <toleranceHediff>NukaCola_Tolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
-  </ChemicalDef>
+    <!--__________ ChemicalDef __________-->
 
-  <!-- Standard Nuka-Cola High -->
-  <HediffDef>
-    <defName>NukaCola_High</defName>
-    <label>nuka-cola buzz</label>
-    <labelNoun>a nuka-cola buzz</labelNoun>
-    <description>Energized by Nuka-Cola's proprietary blend of stimulants. Movement and work speed increased.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0.3,0.3)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.10</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
+    <!-- Chemical Def -->
 
-  <!-- Nuka-Cola Cherry High -->
-  <HediffDef>
-    <defName>NukaCola_Cherry_High</defName>
-    <label>nuka-cherry buzz</label>
-    <labelNoun>a nuka-cherry buzz</labelNoun>
-    <description>The sweet cherry flavor combined with Nuka-Cola's energy boost. Slightly better mood and health regeneration.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0.2,0.3)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.10</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-        <statOffsets>
-          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <ChemicalDef>
+        <defName>NukaCola</defName>
+        <label>nuka-cola</label>
+        <addictionHediff>NukaCola_Addiction</addictionHediff>
+        <toleranceHediff>NukaCola_Tolerance</toleranceHediff>
+        <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+    </ChemicalDef>
 
-  <!-- Nuka-Cola Orange High -->
-  <HediffDef>
-    <defName>NukaCola_Orange_High</defName>
-    <label>nuka-orange boost</label>
-    <labelNoun>a nuka-orange boost</labelNoun>
-    <description>Vitamin-enriched energy from Nuka-Cola Orange. Enhanced immunity and energy.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0.6,0.2)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.10</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-        <statOffsets>
-          <ImmunityGainSpeed>0.08</ImmunityGainSpeed>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <!--__________ Hediff __________-->
 
-  <!-- Nuka-Cola Quantum High -->
-  <HediffDef>
-    <defName>NukaCola_Quantum_High</defName>
-    <label>quantum rush</label>
-    <labelNoun>a quantum rush</labelNoun>
-    <description>The extreme stimulant effects of Nuka-Cola Quantum. Massive boost to all capabilities, but at a cost.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(0.4,0.7,1)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-2.0</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.35</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.20</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.15</offset>
-          </li>
-        </capMods>
-        <statOffsets>
-          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <!-- Standard Nuka-Cola High -->
 
-  <!-- Nuka-Cola Quartz High -->
-  <HediffDef>
-    <defName>NukaCola_Quartz_High</defName>
-    <label>quartz clarity</label>
-    <labelNoun>quartz clarity</labelNoun>
-    <description>The refined effects of Nuka-Cola Quartz. Clear-headed energy and reduced fatigue.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(0.9,0.9,1)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.2</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.12</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.08</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
+    <HediffDef>
+        <defName>NukaCola_High</defName>
+        <label>nuka-cola buzz</label>
+        <labelNoun>a nuka-cola buzz</labelNoun>
+        <description>Energized by Nuka-Cola's proprietary blend of stimulants. Movement and work speed increased.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0.3,0.3)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
 
-  <!-- Nuka-Cola Victory High -->
-  <HediffDef>
-    <defName>NukaCola_Victory_High</defName>
-    <label>victory surge</label>
-    <labelNoun>a victory surge</labelNoun>
-    <description>The premium boost from Nuka-Cola Victory. Enhanced combat and work performance.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0.8,0.2)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.3</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.15</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.10</offset>
-          </li>
-        </capMods>
-        <statOffsets>
-          <AimingDelayFactor>-0.15</AimingDelayFactor>
-          <MeleeHitChance>2</MeleeHitChance>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <!-- Nuka-Cola Cherry High -->
 
-  <!-- Nuka-Dark High -->
-  <HediffDef>
-    <defName>NukaCola_Dark_High</defName>
-    <label>dark rum buzz</label>
-    <labelNoun>a dark rum buzz</labelNoun>
-    <description>The mixed effects of stimulants and alcohol from Nuka-Dark. Confidence boosted but coordination slightly impaired.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(0.6,0.3,0.1)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.8</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-        <statOffsets>
-          <SocialImpact>0.15</SocialImpact>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <HediffDef>
+        <defName>NukaCola_Cherry_High</defName>
+        <label>nuka-cherry buzz</label>
+        <labelNoun>a nuka-cherry buzz</labelNoun>
+        <description>The sweet cherry flavor combined with Nuka-Cola's energy boost. Slightly better mood and health regeneration.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0.2,0.3)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
 
-  <!-- Nukashine High -->
-  <HediffDef>
-    <defName>Nukashine_High</defName>
-    <label>nukashine stupor</label>
-    <labelNoun>a nukashine stupor</labelNoun>
-    <description>Extremely intoxicated from Nukashine. Everything feels amazing but cognitive function is severely impaired. May cause blackouts.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(1,0.9,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-2.5</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <label>tipsy</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.95</setMax>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.25</minSeverity>
-        <label>drunk</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.80</setMax>
-          </li>
-        </capMods>
-        <statOffsets>
-          <SocialImpact>0.20</SocialImpact>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>0.50</minSeverity>
-        <label>hammered</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.60</setMax>
-          </li>
-        </capMods>
-        <vomitMtbDays>0.2</vomitMtbDays>
-      </li>
-      <li>
-        <minSeverity>0.75</minSeverity>
-        <label>blackout drunk</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.30</setMax>
-          </li>
-        </capMods>
-        <vomitMtbDays>0.1</vomitMtbDays>
-        <partEfficiencyOffset>-0.5</partEfficiencyOffset>
-      </li>
-    </stages>
-  </HediffDef>
+    <!-- Nuka-Cola Orange High -->
 
-  <!-- Nuka-Cola Tolerance -->
-  <HediffDef ParentName="DrugToleranceBase">
-    <defName>NukaCola_Tolerance</defName>
-    <label>nuka-cola tolerance</label>
-    <description>A built-up tolerance to Nuka-Cola products. The more severe this tolerance is, the more Nuka-Cola it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>NukaCola</chemical>
-      </li>
-    </comps>
-  </HediffDef>
+    <HediffDef>
+        <defName>NukaCola_Orange_High</defName>
+        <label>nuka-orange boost</label>
+        <labelNoun>a nuka-orange boost</labelNoun>
+        <description>Vitamin-enriched energy from Nuka-Cola Orange. Enhanced immunity and energy.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0.6,0.2)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.08</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
 
-  <!-- Nuka-Cola Addiction -->
-  <HediffDef ParentName="AddictionBase">
-    <defName>NukaCola_Addiction</defName>
-    <label>nuka-cola addiction</label>
-    <description>A chemical addiction to Nuka-Cola. Long-term presence of Nuka-Cola has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug. Without regular doses of Nuka-Cola, withdrawal symptoms will begin.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>Chemical_NukaCola</causesNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.045</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-      </li>
-      <li>
-        <label>unaddicted</label>
-        <minSeverity>0</minSeverity>
-      </li>
-    </stages>
-  </HediffDef>
+    <!-- Nuka-Cola Quantum High -->
 
-  <!-- Nuka-Cola Withdrawal -->
-  <HediffDef ParentName="WithdrawalBase">
-    <defName>NukaCola_Withdrawal</defName>
-    <label>nuka-cola withdrawal</label>
-    <description>Because of a Nuka-Cola addiction, this person's body has adapted to the drug's presence. Without regular doses, they suffer fatigue and sluggishness.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.25</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <label>mild</label>
-        <restFallFactor>1.3</restFallFactor>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.10</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.10</offset>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.50</minSeverity>
-        <label>major</label>
-        <restFallFactor>1.5</restFallFactor>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.20</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Binging_DrugExtreme</mentalState>
-            <mtbDays>15</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
+    <HediffDef>
+        <defName>NukaCola_Quantum_High</defName>
+        <label>quantum rush</label>
+        <labelNoun>a quantum rush</labelNoun>
+        <description>The extreme stimulant effects of Nuka-Cola Quantum. Massive boost to all capabilities, but at a cost.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.4,0.7,1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-2.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Quartz High -->
+
+    <HediffDef>
+        <defName>NukaCola_Quartz_High</defName>
+        <label>quartz clarity</label>
+        <labelNoun>quartz clarity</labelNoun>
+        <description>The refined effects of Nuka-Cola Quartz. Clear-headed energy and reduced fatigue.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.9,0.9,1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.2</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.12</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Victory High -->
+
+    <HediffDef>
+        <defName>NukaCola_Victory_High</defName>
+        <label>victory surge</label>
+        <labelNoun>a victory surge</labelNoun>
+        <description>The premium boost from Nuka-Cola Victory. Enhanced combat and work performance.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0.8,0.2)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.3</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <AimingDelayFactor>-0.15</AimingDelayFactor>
+                    <MeleeHitChance>2</MeleeHitChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Dark High -->
+
+    <HediffDef>
+        <defName>NukaCola_Dark_High</defName>
+        <label>dark rum buzz</label>
+        <labelNoun>a dark rum buzz</labelNoun>
+        <description>The mixed effects of stimulants and alcohol from Nuka-Dark. Confidence boosted but coordination slightly impaired.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.6,0.3,0.1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.8</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <SocialImpact>0.15</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nukashine High -->
+
+    <HediffDef>
+        <defName>Nukashine_High</defName>
+        <label>nukashine stupor</label>
+        <labelNoun>a nukashine stupor</labelNoun>
+        <description>Extremely intoxicated from Nukashine. Everything feels amazing but cognitive function is severely impaired. May cause blackouts.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0.9,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-2.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <label>tipsy</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.95</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.25</minSeverity>
+                <label>drunk</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.80</setMax>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <SocialImpact>0.20</SocialImpact>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.50</minSeverity>
+                <label>hammered</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.60</setMax>
+                    </li>
+                </capMods>
+                <vomitMtbDays>0.2</vomitMtbDays>
+            </li>
+            <li>
+                <minSeverity>0.75</minSeverity>
+                <label>blackout drunk</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.30</setMax>
+                    </li>
+                </capMods>
+                <vomitMtbDays>0.1</vomitMtbDays>
+                <partEfficiencyOffset>-0.5</partEfficiencyOffset>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Tolerance -->
+
+    <HediffDef ParentName="DrugToleranceBase">
+        <defName>NukaCola_Tolerance</defName>
+        <label>nuka-cola tolerance</label>
+        <description>A built-up tolerance to Nuka-Cola products. The more severe this tolerance is, the more Nuka-Cola it takes to get the same effect.</description>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.015</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>NukaCola</chemical>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- Nuka-Cola Addiction -->
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>NukaCola_Addiction</defName>
+        <label>nuka-cola addiction</label>
+        <description>A chemical addiction to Nuka-Cola. Long-term presence of Nuka-Cola has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug. Without regular doses of Nuka-Cola, withdrawal symptoms will begin.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <causesNeed>Chemical_NukaCola</causesNeed>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.045</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+            </li>
+            <li>
+                <label>unaddicted</label>
+                <minSeverity>0</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Withdrawal -->
+
+    <HediffDef ParentName="WithdrawalBase">
+        <defName>NukaCola_Withdrawal</defName>
+        <label>nuka-cola withdrawal</label>
+        <description>Because of a Nuka-Cola addiction, this person's body has adapted to the drug's presence. Without regular doses, they suffer fatigue and sluggishness.</description>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.25</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>mild</label>
+                <restFallFactor>1.3</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.50</minSeverity>
+                <label>major</label>
+                <restFallFactor>1.5</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                </capMods>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Binging_DrugExtreme</mentalState>
+                        <mtbDays>15</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
 
 </Defs>

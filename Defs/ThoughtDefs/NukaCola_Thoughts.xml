@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThoughtDef>
-    <defName>NukaCola_Quantum_Thought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>NukaCola_Quantum_High</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>quantum-charged</label>
-        <description>I feel like I can take on the world! This blue glow is amazing!</description>
-        <baseMoodEffect>10</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+    <!--__________ ThoughtDefs __________-->
 
-  <ThoughtDef>
-    <defName>NukaCola_Victory_Thought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>NukaCola_Victory_High</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>feeling victorious</label>
-        <description>This premium cola makes me feel like a champion.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+    <!-- Nuka-Cola Quantum -->
 
-  <ThoughtDef>
-    <defName>Nukashine_Thought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>Nukashine_High</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>nukashine bliss</label>
-        <description>Everything is wonderful! What was I doing again?</description>
-        <baseMoodEffect>15</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+    <ThoughtDef>
+        <defName>NukaCola_Quantum_Thought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>NukaCola_Quantum_High</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>quantum-charged</label>
+                <description>I feel like I can take on the world! This blue glow is amazing!</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Nuka-Cola Victory -->
+
+    <ThoughtDef>
+        <defName>NukaCola_Victory_Thought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>NukaCola_Victory_High</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>feeling victorious</label>
+                <description>This premium cola makes me feel like a champion.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Nukashine -->
+
+    <ThoughtDef>
+        <defName>Nukashine_Thought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Nukashine_High</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>nukashine bliss</label>
+                <description>Everything is wonderful! What was I doing again?</description>
+                <baseMoodEffect>15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
 </Defs>
