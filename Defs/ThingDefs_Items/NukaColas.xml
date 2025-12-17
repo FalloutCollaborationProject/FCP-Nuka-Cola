@@ -21,6 +21,7 @@
             <Flammability>0.2</Flammability>
             <Beauty>0</Beauty>
         </statBases>
+        <drawGUIOverlay>true</drawGUIOverlay>
         <altitudeLayer>Item</altitudeLayer>
         <stackLimit>75</stackLimit>
         <tickerType>Rare</tickerType>
@@ -29,6 +30,7 @@
             <li>Foods</li>
         </thingCategories>
         <ingestible>
+            <preferability>MealSimple</preferability>
             <foodType>Fluid, Processed</foodType>
             <baseIngestTicks>80</baseIngestTicks>
             <chairSearchRadius>25</chairSearchRadius>
@@ -55,7 +57,7 @@
         <label>nuka-cola</label>
         <description>The standard Nuka-Cola that took the world by storm before the war. This sweet, carbonated beverage provides a quick energy boost and a small amount of joy. The distinctive rocket-shaped bottle is instantly recognizable.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Cola_Classic/Nuka_Cola_Classic</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Cola_Classic</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -86,7 +88,7 @@
         <label>nuka-cola bottle</label>
         <description>A standard Nuka-Cola in its iconic bottle. Provides refreshment and a mild stimulant effect from the unique blend of ingredients.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Cola/Nuka_Cola</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Cola</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -117,7 +119,7 @@
         <label>nuka-cola can</label>
         <description>Nuka-Cola in a convenient aluminum can. Same great taste and energy boost as the bottled version, but easier to stack and transport.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Cola_Can/Nuka_Cola_Can</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Cola_Can</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -149,7 +151,7 @@
         <label>nuka-cola cherry</label>
         <description>A cherry-flavored variant of Nuka-Cola. The added fruit flavoring provides slight health benefits along with the signature energy boost. Particularly popular before the war.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Cherry/Nuka_Cherry</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Cherry</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -180,7 +182,7 @@
         <label>nuka-cola grape</label>
         <description>A grape-flavored Nuka-Cola variant with a distinctive purple hue. The grape flavoring adds a sweet taste while maintaining the energizing properties of standard Nuka-Cola.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Grape/Nuka_Grape</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Grape</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -211,7 +213,7 @@
         <label>nuka-cola orange</label>
         <description>An orange-flavored Nuka-Cola with hints of citrus. The vitamin content from orange flavoring provides minor immune system benefits alongside the energizing effects.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Orange/Nuka_Orange</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Orange</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -242,7 +244,7 @@
         <label>nuka-cola quantum</label>
         <description>The rare and potent Nuka-Cola Quantum, featuring a blue glow from mild radioactive isotopes. Provides a massive energy boost but with potential health risks. Highly sought after for its extreme effects.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Quantum/Nuka_Quantum</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Quantum</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>1.1</drawSize>
         </graphicData>
@@ -279,7 +281,7 @@
         <label>nuka-cola quartz</label>
         <description>A rare desert-region variant with a distinctive clear appearance and enhanced formula. Provides superior refreshment and energy in harsh conditions.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Quartz/Nuka_Quartz</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Quartz</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -310,7 +312,7 @@
         <label>nuka-cola victory</label>
         <description>A premium pre-war variant celebrating military victories. Enhanced with additional stimulants and a superior taste. Commands a high price for its exceptional effects.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Victory/Nuka_Victory</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Victory</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -341,7 +343,7 @@
         <label>nuka-cola wild</label>
         <description>A wild berry flavored Nuka-Cola with an aggressive marketing campaign. The exotic fruit blend provides enhanced taste and a solid energy boost.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Wild/Nuka_Wild</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Wild</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -374,7 +376,7 @@
         <label>nuka-dark</label>
         <description>A rum-flavored alcoholic Nuka-Cola variant. Combines the stimulant effects of Nuka-Cola with alcohol, resulting in unique but potentially risky effects. Popular with adventurous drinkers.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Dark/Nuka_Dark</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Dark</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -417,7 +419,7 @@
         <label>nuka-rum</label>
         <description>A stronger rum variant of Nuka-Cola with higher alcohol content. Less carbonation, more kick. Provides significant intoxication with mild stimulant effects.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nuka_Rum/Nuka_Rum</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nuka_Rum</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -460,7 +462,7 @@
         <label>nukashine</label>
         <description>A powerful homebrewed alcoholic concoction made with Nuka-Cola as a base. Extremely potent and unpredictable, it can cause memory loss and blackouts. Only the desperate or foolhardy consume this regularly.</description>
         <graphicData>
-            <texPath>Things/Food/Nuka_Colas/Nukashine/Nukashine</texPath>
+            <texPath>Things/Food/Nuka_Colas/Nukashine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
