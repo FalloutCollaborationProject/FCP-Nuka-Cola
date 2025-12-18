@@ -6,10 +6,10 @@
     <!-- Chemical Def -->
 
     <ChemicalDef>
-        <defName>NukaCola</defName>
+        <defName>FCP_Nuka_Cola</defName>
         <label>nuka-cola</label>
-        <addictionHediff>NukaCola_Addiction</addictionHediff>
-        <toleranceHediff>NukaCola_Tolerance</toleranceHediff>
+        <addictionHediff>FCP_Nuka_Cola_Addiction</addictionHediff>
+        <toleranceHediff>FCP_Nuka_Cola_Tolerance</toleranceHediff>
         <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
     </ChemicalDef>
 
@@ -18,7 +18,7 @@
     <!-- Standard Nuka-Cola High -->
 
     <HediffDef>
-        <defName>NukaCola_High</defName>
+        <defName>FCP_Nuka_Cola_High</defName>
         <label>nuka-cola buzz</label>
         <labelNoun>a nuka-cola buzz</labelNoun>
         <description>Energized by Nuka-Cola's proprietary blend of stimulants. Movement and work speed increased.</description>
@@ -53,7 +53,7 @@
     <!-- Nuka-Cola Cherry High -->
 
     <HediffDef>
-        <defName>NukaCola_Cherry_High</defName>
+        <defName>FCP_Nuka_Cola_Cherry_High</defName>
         <label>nuka-cherry buzz</label>
         <labelNoun>a nuka-cherry buzz</labelNoun>
         <description>The sweet cherry flavor combined with Nuka-Cola's energy boost. Slightly better mood and health regeneration.</description>
@@ -91,7 +91,7 @@
     <!-- Nuka-Cola Orange High -->
 
     <HediffDef>
-        <defName>NukaCola_Orange_High</defName>
+        <defName>FCP_Nuka_Cola_Orange_High</defName>
         <label>nuka-orange boost</label>
         <labelNoun>a nuka-orange boost</labelNoun>
         <description>Vitamin-enriched energy from Nuka-Cola Orange. Enhanced immunity and energy.</description>
@@ -129,7 +129,7 @@
     <!-- Nuka-Cola Quantum High -->
 
     <HediffDef>
-        <defName>NukaCola_Quantum_High</defName>
+        <defName>FCP_Nuka_Cola_Quantum_High</defName>
         <label>quantum rush</label>
         <labelNoun>a quantum rush</labelNoun>
         <description>The extreme stimulant effects of Nuka-Cola Quantum. Massive boost to all capabilities, but at a cost.</description>
@@ -171,7 +171,7 @@
     <!-- Nuka-Cola Quartz High -->
 
     <HediffDef>
-        <defName>NukaCola_Quartz_High</defName>
+        <defName>FCP_Nuka_Cola_Quartz_High</defName>
         <label>quartz clarity</label>
         <labelNoun>quartz clarity</labelNoun>
         <description>The refined effects of Nuka-Cola Quartz. Clear-headed energy and reduced fatigue.</description>
@@ -206,7 +206,7 @@
     <!-- Nuka-Cola Victory High -->
 
     <HediffDef>
-        <defName>NukaCola_Victory_High</defName>
+        <defName>FCP_Nuka_Cola_Victory_High</defName>
         <label>victory surge</label>
         <labelNoun>a victory surge</labelNoun>
         <description>The premium boost from Nuka-Cola Victory. Enhanced combat and work performance.</description>
@@ -245,7 +245,7 @@
     <!-- Nuka-Dark High -->
 
     <HediffDef>
-        <defName>NukaCola_Dark_High</defName>
+        <defName>FCP_Nuka_Cola_Dark_High</defName>
         <label>dark rum buzz</label>
         <labelNoun>a dark rum buzz</labelNoun>
         <description>The mixed effects of stimulants and alcohol from Nuka-Dark. Confidence boosted but coordination slightly impaired.</description>
@@ -347,7 +347,7 @@
     <!-- Nuka-Cola Tolerance -->
 
     <HediffDef ParentName="DrugToleranceBase">
-        <defName>NukaCola_Tolerance</defName>
+        <defName>FCP_Nuka_Cola_Tolerance</defName>
         <label>nuka-cola tolerance</label>
         <description>A built-up tolerance to Nuka-Cola products. The more severe this tolerance is, the more Nuka-Cola it takes to get the same effect.</description>
         <comps>
@@ -355,7 +355,7 @@
                 <severityPerDay>-0.015</severityPerDay>
             </li>
             <li Class="HediffCompProperties_DrugEffectFactor">
-                <chemical>NukaCola</chemical>
+                <chemical>FCP_Nuka_Cola</chemical>
             </li>
         </comps>
     </HediffDef>
@@ -363,11 +363,11 @@
     <!-- Nuka-Cola Addiction -->
 
     <HediffDef ParentName="AddictionBase">
-        <defName>NukaCola_Addiction</defName>
+        <defName>FCP_Nuka_Cola_Addiction</defName>
         <label>nuka-cola addiction</label>
         <description>A chemical addiction to Nuka-Cola. Long-term presence of Nuka-Cola has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug. Without regular doses of Nuka-Cola, withdrawal symptoms will begin.</description>
         <hediffClass>Hediff_Addiction</hediffClass>
-        <chemicalNeed>Chemical_NukaCola</chemicalNeed>
+        <chemicalNeed>FCP_Need_Chemical_Nuka_Cola</chemicalNeed>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>-0.045</severityPerDay>
@@ -383,10 +383,124 @@
         </stages>
     </HediffDef>
 
+    <!-- Nuka-Cola Ice Cold High -->
+
+    <HediffDef>
+        <defName>FCP_Nuka_Cola_Ice_Cold_High</defName>
+        <label>ice-cold clarity</label>
+        <labelNoun>an ice-cold clarity</labelNoun>
+        <description>The crisp chill of Ice Cold Nuka sharpens the senses and quickens movement. Minor extra focus and stamina.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.6,0.9,1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.6</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.18</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Twist High -->
+
+    <HediffDef>
+        <defName>FCP_Nuka_Cola_Twist_High</defName>
+        <label>twist zest</label>
+        <labelNoun>a twist zest</labelNoun>
+        <description>The citrus tang of Nuka-Twist lifts mood and grants a quick burst of energy and alertness.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.9,0.95,0.6)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.12</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.06</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <SocialImpact>0.08</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Nuka-Cola Cranberry High -->
+
+    <HediffDef>
+        <defName>FCP_Nuka_Cola_Cranberry_High</defName>
+        <label>cranberry lift</label>
+        <labelNoun>a cranberry lift</labelNoun>
+        <description>The tartness of Nuka-Cranberry gives a pleasant lift and slightly bolsters immunity while providing steady energy.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(0.9,0.4,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.06</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
     <!-- Nuka-Cola Withdrawal -->
 
    <!-- <HediffDef >
-        <defName>NukaCola_Withdrawal</defName>
+        <defName>FCP_Nuka_Cola_Withdrawal</defName>
         <label>nuka-cola withdrawal</label>
         <description>Because of a Nuka-Cola addiction, this person's body has adapted to the drug's presence. Without regular doses, they suffer fatigue and sluggishness.</description>
         <comps>

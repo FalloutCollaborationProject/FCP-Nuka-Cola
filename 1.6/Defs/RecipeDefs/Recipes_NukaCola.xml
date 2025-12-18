@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Fermentor recipe: convert classic Nuka-Cola into Ice Cold variant -->
+
+    <RecipeDef>
+        <defName>FCP_Create_Nuka_Ice_Cold</defName>
+        <label>make nuka-cola (ice cold)</label>
+        <description>Place a bottle of Nuka-Cola Classic into a refreidgerator and turn it into the Ice Cold variant.</description>
+        <jobString>Fermenting nuka-cola.</jobString>
+        <workAmount>1200</workAmount>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <targetCountAdjustment>1</targetCountAdjustment>
+        <recipeUsers>
+            <li>FCP_Nuka_Fridge</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FCP_Nuka_Cola_Classic</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>FCP_Nuka_Cola_Classic</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <FCP_Nuka_Cola_Ice_Cold>1</FCP_Nuka_Cola_Ice_Cold>
+        </products>
+    </RecipeDef>
+
+</Defs>

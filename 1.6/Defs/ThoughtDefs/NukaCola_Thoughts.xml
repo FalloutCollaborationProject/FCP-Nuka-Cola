@@ -6,9 +6,9 @@
     <!-- Nuka-Cola Quantum -->
 
     <ThoughtDef>
-        <defName>NukaCola_Quantum_Thought</defName>
+        <defName>FCP_Nuka_Cola_Quantum_Thought</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>NukaCola_Quantum_High</hediff>
+        <hediff>FCP_Nuka_Cola_Quantum_High</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>
@@ -22,9 +22,9 @@
     <!-- Nuka-Cola Victory -->
 
     <ThoughtDef>
-        <defName>NukaCola_Victory_Thought</defName>
+        <defName>FCP_Nuka_Cola_Victory_Thought</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>NukaCola_Victory_High</hediff>
+        <hediff>FCP_Nuka_Cola_Victory_High</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>
