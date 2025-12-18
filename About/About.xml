@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>FCP - Nuka Cola</name>
-	<packageId>Rick.FCP.NukaCola</packageId>
+
+    <!-- About Information -->
+
+    <name>FCP - Nuka Cola</name>
+    <author>Rick</author>
+    <packageId>Rick.FCP.NukaCola</packageId>
     <description>The Fallout Collaboration Project Presents: Nuka Cola.</description>
-	<supportedVersions>
-		<li>1.6</li>
-	</supportedVersions>
-	<modDependencies>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
         <li>
             <packageId>Rick.FCP.Core.Tools</packageId>
             <displayName>FCP - Tools</displayName>
