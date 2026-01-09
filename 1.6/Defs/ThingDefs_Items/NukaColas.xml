@@ -11,6 +11,9 @@
         <thingClass>ThingWithComps</thingClass>
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
+        <graphicData>
+            <drawSize>0.75</drawSize>
+        </graphicData>
         <useHitPoints>true</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <selectable>true</selectable>
@@ -254,7 +257,6 @@
         <graphicData>
             <texPath>Things/Food/Nuka_Colas/Nuka_Quantum</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>1.1</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>45</MarketValue>
@@ -384,7 +386,6 @@
         <graphicData>
             <texPath>Things/Food/Nuka_Colas/Nuka_Ice_Cold</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>1.0</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>14</MarketValue>
