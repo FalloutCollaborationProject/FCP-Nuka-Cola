@@ -17,6 +17,7 @@
         <useHitPoints>true</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <selectable>true</selectable>
+        <alwaysHaulable>true</alwaysHaulable>
         <statBases>
             <MaxHitPoints>60</MaxHitPoints>
             <DeteriorationRate>0.5</DeteriorationRate>
