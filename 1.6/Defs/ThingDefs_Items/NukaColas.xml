@@ -46,7 +46,7 @@
                 </northDefault>
             </ingestHoldOffsetStanding>
             <outcomeDoers>
-                <li Class="SpawnOnIngest.IngestionOutcomeDoer_SpawnItem">
+                <li Class="FCP.Core.IngestionOutcomeDoer_SpawnItem">
                     <chance>1.00</chance>
                     <thingDefs>
                         <li>
