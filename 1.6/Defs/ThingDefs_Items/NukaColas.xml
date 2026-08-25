@@ -383,7 +383,7 @@
     <ThingDef ParentName="FCP_Nuka_Cola_Base">
         <defName>FCP_Nuka_Cola_Ice_Cold</defName>
         <label>nuka-cola (ice cold)</label>
-        <description>A chilled variant of Nuka-Cola. Cold, crisp, and refreshing — a pre-war marketing hit. Said to be made by a special cold-fermentation process that gives it a sharper fizz and a brisk, invigorating kick.</description>
+        <description>A chilled variant of Nuka-Cola. Cold, crisp, and refreshing, this was a pre-war marketing hit. Said to be made by a special cold-fermentation process that gives it a sharper fizz and a brisk, invigorating kick.</description>
         <graphicData>
             <texPath>Things/Food/Nuka_Colas/Nuka_Ice_Cold</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
